@@ -1,3 +1,19 @@
-.red-message {
-    color: red;
+.navbar {
+    height: 60px;
+}
+
+
+.buttonSize {
+    width: 15px;
+    height: 15px;
+}
+.card{
+    position: relative
+}
+
+.btn-group {
+    position: absolute;
+    top: 0;
+    left:118px;
+    right:0;
 }

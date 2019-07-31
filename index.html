@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -21,6 +21,10 @@
 </head>
 
 <body>
+     <script>
+         var token = prompt("Enter your token", "");
+
+     </script>
 <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
     <a class="navbar-brand" href="#"> <img src="img/logo.png" width="70px"> The Plant Me </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -36,48 +40,81 @@
                 <a class="nav-link" href="#">Search </a>
             </li>
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li >
+                <a href="#" data-toggle="modal" data-target="#logoutModal" style="color: white" >  logout</a>
+            </li>
+        </ul>
     </div>
 </nav>
-<div class="container-fluid d-flex ">
-    <div class="row">
-        <div class="col-12 col-lg-4">
-            <div class="card" style="width: 18rem;" >
-                <div class="cardImage">
-                    <button type="button" class="btn btn-primary"><img src="img/care/icWaterOn.png"></button>
-                    <button type="button" class="btn btn-success"> <img src= "Cut"> </button>
-                    <button type="button" class="btn btn-warning"> <img src="Fertilize"> </button>
-                    <img src="img/zzplant.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"> Zamioculcas Zamiifolia</p>
-                    <p> Age : 2 years </p>
-                    <a href="#" class="btn btn-primary"> Plant info </a>
-                </div>
+<div class="container-fluid">
+    <div class="d-flex flex-row ">
+        <div class="col-12 col-lg-3">
+            <div class="card" style="width: 18rem; ">
+                <div class="btn-group" role="group" aria-label="Basic example"  >
+                    <button type="button" class="btn btn-secondary btn"><img src="img/care/icWaterOn.png" width=" 35px"></button>
+                    <button type="button" class="btn btn-secondary btn "><img src="img/care/icCutOn.png" width="35px"></button>
+                    <button type="button" class="btn btn-secondary btn "><img src="img/care/icFertilizeOn.png" width="35px"></button>
+                </div >
+                <img src="img/zzplant.png" class="card-img-top" alt="..." >
+            <div class="card-body ">
+                <h5 class="card-title"></h5>
+                <p class="card-text"> Zamioculcas Zamiifolia</p>
+                <p> Age : 1,5 years </p>
+                <a href="#" class="btn btn-primary"> Plant info </a>
             </div>
         </div>
-        <div class="col-12 col-lg-4">
-            <div class="card" style="width: 18rem;">
-                <img src="img/steprocarpus.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text red-message"> Streptocarpus Cariad </p>
-                    <p> Age : 2 years </p>
-                    <a href="#" class="btn btn-primary"> Plant info </a>
-                </div>
+    </div>
+    <div class="col-12 col-lg-3">
+        <div class="card" style="width: 18rem;">
+            <div class="btn-group" role="group" aria-label="Basic example"  >
+                <button type="button" class="btn btn-secondary btn"><img src="img/care/icWaterOn.png" width=" 35px"></button>
+                <button type="button" class="btn btn-secondary btn "><img src="img/care/icCutOn.png" width="35px"></button>
+                <button type="button" class="btn btn-secondary btn "><img src="img/care/icFertilizeOn.png" width="35px"></button>
+            </div >
+            <img src="img/steprocarpus.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text red-message"> Streptocarpus Cariad </p>
+                <p> Age : 3 months </p>
+                <a href="#" class="btn btn-primary"> Plant info </a>
             </div>
         </div>
-         <div class="col-12 col-lg-4">
+    </div>
+    <div class="col-12 col-lg-3">
+        <div class="card" style="width: 18rem;">
+            <div class="btn-group" role="group" aria-label="Basic example"  >
+                <button type="button" class="btn btn-secondary btn"><img src="img/care/icWaterOn.png" width=" 35px"></button>
+                <button type="button" class="btn btn-secondary btn "><img src="img/care/icCutOn.png" width="35px"></button>
+                <button type="button" class="btn btn-secondary btn "><img src="img/care/icFertilizeOn.png" width="35px"></button>
+            </div >
+            <img src="img/aloeVera.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"> Aloe Vera </p>
+                <p> Age : 3 years </p>
+                <a href="#" class="btn btn-primary"> Plant info </a>
+            </div>
+        </div>
+    </div>
+        <div class="col-12 col-lg-3">
             <div class="card" style="width: 18rem;">
-                <img src="img/steprocarpus.png" class="card-img-top" alt="...">
+                <div class="btn-group" role="group" aria-label="Basic example"  >
+                    <button type="button" class="btn btn-secondary btn"><img src="img/care/icWaterOn.png" width=" 35px"></button>
+                    <button type="button" class="btn btn-secondary btn "><img src="img/care/icCutOn.png" width="35px"></button>
+                    <button type="button" class="btn btn-secondary btn "><img src="img/care/icFertilizeOn.png" width="35px"></button>
+                </div >
+                  <img src="img/rose.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"></h5>
-                    <p class="card-text"> Aloe Vera </p>
-                    <p> Age : 2 years </p>
+                    <p class="card-text"> Rose </p>
+                    <p> Age : 5 months </p>
                     <a href="#" class="btn btn-primary"> Plant info </a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 </body>
